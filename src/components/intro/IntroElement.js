@@ -71,15 +71,30 @@ export const IntroSVG = styled.svg`
 export const IntroRightBg = styled.div`
   width: 100%;
   height: 100%;
-  clip-path: polygon(13% 0, 100% 0, 100% 100%, 6% 100%, 0% 38%);
+  clip-path: polygon(
+    0 10%,
+    10% 10%,
+    10% 0,
+    90% 0,
+    90% 11%,
+    100% 11%,
+    100% 91%,
+    90% 91%,
+    90% 100%,
+    10% 100%,
+    10% 91%,
+    0 91%
+  );
   background-color: #2e86de;
   position: absolute;
   top: 0;
   right: 0;
 `
 export const IntroImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   position: absolute;
-  object-fit: cover;
+  right: 105px;
+  top: 120px;
+  object-fit: contain;
 `

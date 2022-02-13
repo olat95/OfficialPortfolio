@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../images/profile.png'
+import profile from '../../images/profile.jpeg'
 import {
   Container,
   IntroductDesc,

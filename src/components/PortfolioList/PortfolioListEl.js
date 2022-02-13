@@ -17,7 +17,12 @@ export const PortListTitle = styled.h1`
 export const PortListDesc = styled.p`
   margin: 20px 0;
 `
-export const PortList = styled.div``
+export const PortList = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`
 // export const Container = styled.div``
 // export const Container = styled.div``
 // export const Container = styled.div``

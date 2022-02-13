@@ -7,6 +7,7 @@ import {
   PortListText,
   PortListTitle,
 } from './PortfolioListEl'
+import { portfolio } from '../../data'
 
 const PortfolioList = () => {
   return (
@@ -19,11 +20,9 @@ const PortfolioList = () => {
         </PortListDesc>
       </PortListText>
       <PortList>
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
+        {portfolio.map((item) => (
+          <Portfolio key={item.id} img={item.img} link={item.link} />
+        ))}
       </PortList>
     </Container>
   )

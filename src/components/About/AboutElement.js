@@ -7,6 +7,21 @@ export const Container = styled.div`
 `
 export const AboutLeft = styled.div`
   flex: 1;
+  clip-path: polygon(
+    0 10%,
+    10% 10%,
+    10% 0,
+    90% 0,
+    90% 11%,
+    100% 11%,
+    100% 91%,
+    90% 91%,
+    90% 100%,
+    10% 100%,
+    10% 91%,
+    0 91%
+  );
+  background-color: #2e86de;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,8 +30,8 @@ export const AboutLeft = styled.div`
 `
 export const AboutCardBg = styled.div`
   position: absolute;
-  top: 50px;
-  left: 60px;
+  top: 90px;
+  left: 105px;
   width: 60%;
   height: 70vh;
   border-radius: 30px;
@@ -32,11 +47,14 @@ export const AboutCard = styled.div`
 export const AboutImage = styled.img`
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   object-fit: cover;
 `
 export const AboutRight = styled.div`
   flex: 1;
-  ${'' /* padding: 0 20px; */}
+  padding: 0 20px;
 `
 export const AboutRTitle = styled.h2`
   font-weight: 400;
