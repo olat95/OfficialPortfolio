@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mobile } from '../../responsive'
 
 export const Container = styled.div`
   padding: 50px 100px;
@@ -6,9 +7,13 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
+
+  ${mobile({ padding: '50px' })}
 `
 export const PortListText = styled.div`
   width: 65%;
+
+  ${mobile({ width: '100%' })}
 `
 export const PortListTitle = styled.h1`
   font-size: 50px;
@@ -16,6 +21,8 @@ export const PortListTitle = styled.h1`
 `
 export const PortListDesc = styled.p`
   margin: 20px 0;
+
+  ${mobile({ display: 'none' })}
 `
 export const PortList = styled.div`
   width: 100%;

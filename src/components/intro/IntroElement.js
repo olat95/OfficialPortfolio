@@ -1,8 +1,11 @@
 import styled from 'styled-components'
+import { mobile } from '../../responsive'
 
 export const Container = styled.div`
   display: flex;
   height: 100vh;
+
+  ${mobile({ flexDirection: 'column' })}
 `
 export const IntroLeft = styled.div`
   flex: 1;
@@ -16,6 +19,15 @@ export const IntroLeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  ${mobile({
+    padding: '10px',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    height: '100%',
+    border: '1px solid black',
+  })}
 `
 export const Introduction = styled.h2`
   font-size: 30px;
@@ -57,6 +69,8 @@ export const IntroductTitleContent = styled.div`
 `
 export const IntroductDesc = styled.p`
   text-align: justify;
+
+  ${mobile({ display: 'none' })}
 `
 export const IntroRight = styled.div`
   flex: 1;
@@ -89,6 +103,8 @@ export const IntroRightBg = styled.div`
   position: absolute;
   top: 0;
   right: 0;
+
+  ${'' /* ${mobile({ display: 'none' })} */}
 `
 export const IntroImage = styled.img`
   width: 70%;

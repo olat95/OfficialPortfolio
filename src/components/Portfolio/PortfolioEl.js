@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkRoute } from 'react-router-dom'
+import { mobile } from '../../responsive'
 
 export const Container = styled.div`
   width: 30%;
@@ -11,6 +12,8 @@ export const Container = styled.div`
   box-shadow: -2px 5px 14px -7px rgba(0, 0, 0, 1);
   -webkit-box-shadow: -2px 5px 14px -7px rgba(0, 0, 0, 1);
   -moz-box-shadow: -2px 5px 14px -7px rgba(0, 0, 0, 1);
+
+  ${mobile({ width: '40%', height: '20vh' })}
 `
 export const PortBrowser = styled.div`
   height: 40px;

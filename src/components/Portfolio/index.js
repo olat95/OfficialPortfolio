@@ -17,7 +17,7 @@ const Portfolio = ({ img, link }) => {
         <BrowserCircle2></BrowserCircle2>
         <BrowserCircle3></BrowserCircle3>
       </PortBrowser>
-      <PortfolioLink to={link} replace>
+      <PortfolioLink to={link}>
         <PortfolioImg src={img} alt='' />
       </PortfolioLink>
     </Container>

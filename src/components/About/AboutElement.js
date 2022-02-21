@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+import { mobile } from '../../responsive'
 
 export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  ${mobile({ flexDirection: 'column', textAlign: 'center', marginTop: '50px' })}
 `
 export const AboutLeft = styled.div`
   flex: 1;
@@ -27,6 +29,8 @@ export const AboutLeft = styled.div`
   justify-content: center;
   position: relative;
   height: 100%;
+
+  ${mobile({ width: '100%' })}
 `
 export const AboutCardBg = styled.div`
   position: absolute;
@@ -36,6 +40,8 @@ export const AboutCardBg = styled.div`
   height: 70vh;
   border-radius: 30px;
   background-color: #222f3e;
+
+  ${mobile({ display: 'none' })}
 `
 export const AboutCard = styled.div`
   width: 60%;
@@ -43,6 +49,8 @@ export const AboutCard = styled.div`
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+
+  ${mobile({ height: '30vh' })}
 `
 export const AboutImage = styled.img`
   width: 100%;
@@ -55,6 +63,8 @@ export const AboutImage = styled.img`
 export const AboutRight = styled.div`
   flex: 1;
   padding: 0 20px;
+
+  ${mobile({ padding: '20px' })}
 `
 export const AboutRTitle = styled.h2`
   font-weight: 400;
@@ -63,7 +73,9 @@ export const AboutRSubtitle = styled.p`
   color: #576574;
   margin: 20px 0;
 `
-export const AboutAward = styled.div``
+export const AboutAward = styled.div`
+  ${mobile({ display: 'none' })}
+`
 export const AboutAwardImg = styled.img`
   width: 300px;
   height: 200px;
